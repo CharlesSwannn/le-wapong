@@ -1,0 +1,94 @@
+.match-slider {
+  text-align: center;
+  text-decoration: none;
+  .m-slider-leaderboard {
+    background-color: $gray;
+    padding: 1px 20px;
+    border: 3px solid $light-gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: -3px;
+  }
+  .m-slider-matches {
+    background: linear-gradient(0deg, #FD1015 0%, #fb4b02 100%);
+    padding: 1px 20px;
+    border: 3px solid $light-gray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -3px;
+  }
+}
+
+.overall-matches {
+  background-color: #D3D3D3;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.reload {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: auto;
+  z-index: 100;
+}
+
+.player1 {
+  color:#6C6C6C;
+  text-decoration: none;
+  max-width: 100px;
+  text-align: center;
+}
+
+.player2 {
+  color:#6C6C6C;
+  text-decoration: none;
+  max-width: 100px;
+  text-align: center;
+}
+
+.vs {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.player2:onclick {
+  color: white;
+  text-decoration: none;
+}
+
+.round-num {
+  align-self: center;
+  width: 100%;
+}
+
+.match {
+  background-color: white;
+  border-bottom: 1px solid #6c6c6c66;
+}
+
+.fa-rotate-right {
+  color: #6C6C6C;
+}
+
+#accordion-btn {
+  background-color: #d3d3d357;
+  border-radius: 5px;
+}
+
+.match-winner {
+  // border: 1px solid!important;
+  box-shadow: 1px 1px $light-gray!important;
+  color: $blue!important;
+  border-radius: 10px;
+}

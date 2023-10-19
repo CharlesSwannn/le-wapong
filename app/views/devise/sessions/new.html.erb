@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="welcome-login">
+    <h3 class="text-center m-4">Welcome to Le Wapong! </h3>
+    <h4 class="text-center welcome-text">Please login and have fun playing tournaments with your friends!</h4>
+  </div>
+
+  <div class="form-login">
+  <h2 class="text-center" style="color:#253244">Log in</h2>
+
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: :false }) do |f| %>
+    <div class="form-inputs form_info">
+      <%= f.input :email,
+                  required: false,
+                  autofocus: true,
+                  input_html: {
+                    autocomplete: "email",
+                    class: "email"
+                  } %>
+      <%= f.input :password,
+                  required: false,
+                  input_html: {
+                    autocomplete: "current-password",
+                    class: "password"
+                  } %>
+      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    </div>
+
+    <div class="form-actions text-center">
+      <%= f.button :submit, "Log in", class: "btn btn-primary" %>
+    </div>
+
+  <% end %>
+
+  <div class="ms-5 mt-4">
+    <%= render "devise/shared/links" %>
+  </div>
+
+  </div>
+</div>

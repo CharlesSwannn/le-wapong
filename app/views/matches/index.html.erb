@@ -1,0 +1,51 @@
+
+<%= render "shared/league_info" %>
+
+<div class="match-slider mt-3 mb-4">
+  <%= link_to league_path(@league), class: "m-slider-leaderboard text-decoration-none" do %>
+    <i class="fa-solid fa-table-list"></i>
+  <% end %>
+  <%= link_to league_matches_path(@league), class: "m-slider-matches" do%>
+    <i class="fa-solid fa-user-group"></i>
+  <% end %>
+</div>
+
+<div class="w-100">
+  <% @max_round.times do |round| %>
+  <div class="overall-matches">
+      <% round += 1 %>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="round accordion-item" style="border-radius: 5px">
+          <div class="round-num">
+            <h2 class="lead accordion-header" id="flush-heading<%= round %>">
+              <button class="accordion-button collapsed" id="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse<%= round %>" aria-expanded="true" aria-controls="flush-collapse<%= round %>">
+                <strong>ROUND <%= round %></strong>
+              </button>
+            </h2>
+          </div>
+          <% @matches.where(round: round).each do |match| %>
+          <div id="flush-collapse<%= round %>" class="accordion-collapse collapse" aria-labelledby="flush-heading<%= round %>" data-bs-parent="#accordionFlushExample">
+              <div class="match d-flex justify-content-between align-items-center position-relative accordion-body" data-controller="input-round">
+                <div>
+                  <%= link_to setwinner_match_path(match, winner_id: match.player1), data: { turbo_method: :post }, style:"text-decoration:none" do %>
+                    <div class="player1 <%= "btn btn-success match-winner" if match.player1 == match.winner %>" data-action="click->input-round#send" data-input-round-target="player1">
+                      <%= "#{match.player1.first_name} #{match.player1.last_name}" %>
+                    </div>
+                  <% end %>
+                </div>
+                <div class="vs">vs</div>
+                <div>
+                  <%= link_to setwinner_match_path(match, winner_id: match.player2), data: { turbo_method: :post }, style:"text-decoration:none" do %>
+                    <div class="player2 <%= "btn btn-success match-winner" if match.player2 == match.winner %>" data-action="click->input-round#send" data-input-round-target="player2">
+                      <%= "#{match.player2.first_name} #{match.player2.last_name}" %>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+  </div>
+    <% end %>
+</div>

@@ -1,0 +1,181 @@
+.leagues {
+  border-radius: 5px;
+  padding: 15px;
+  color: $white;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 2px solid grey;
+  box-shadow: 0 3px 10px black;
+
+}
+
+.avatar-index {
+  margin: auto;
+  width: 75px;
+  border-radius: 50%;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.index-league {
+  color: white;
+  justify-content: center;
+}
+
+.infos-index {
+  margin-top: 35px;
+  width: auto;
+  text-align: center;
+}
+
+.profile-infos {
+  display: block;
+  margin: auto;
+}
+
+
+.your-leagues {
+  margin: 20px 25px 50px 25px;
+  background-color: $blue;
+  text-align: center;
+  padding: 5px;
+  color: $white;
+  border-top: 1px solid grey;
+
+ }
+
+ .league {
+  font-weight: bold;
+  color: #253244;
+ }
+
+ .new-tournament {
+  color:white;
+  margin-top: 25px;
+
+ }
+
+ .btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  margin: auto;
+  background: linear-gradient(0deg, #FD1015 0%, #fb4b02 100%);
+  border: 3px solid white;
+  box-shadow: 1px 1px 7px lightgray;
+}
+
+.btn-cancel {
+color: $red;
+text-decoration: none;
+padding: 1px 4px 0px ;
+
+}
+
+.btn-flat:hover {
+  background: #6C6C6C;
+  color: white;
+}
+
+.link-index {
+  font-weight: bold;
+  color: #e60f05;
+}
+
+.p-name-league {
+  color: $white;
+  font-weight: bolder;
+  font-size:20px;
+}
+
+.sport-league {
+  font-size: 18px;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+
+.creator-league {
+  font-weight: 100;
+  font-size: 13px;
+  margin-top: -12px;
+}
+
+.text-infos-index {
+  font-weight: 200;
+}
+
+
+.everything {
+  margin: auto;
+}
+
+
+.accordion-league {
+  padding: 0px!important;
+}
+
+.accordion-league-item {
+  border: hidden!important;
+  background-color: $blue!important;
+}
+
+.league-accordion-button{
+  //min-width: 30vw;
+  font-size: x-large;
+  box-shadow: 0 0 !important;
+  color: white!important;
+  background-color: $blue!important;
+
+}
+
+.league-accordion-button collapsed{
+  //min-width: 30vw;
+  color: white!important;
+  background-color: $blue!important;
+}
+.accordion-league-header {
+
+  text-align: center;
+  border-bottom: 0px!important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.text-center {
+  color: white;
+}
+
+#copy-button {
+  color: white!important;
+  box-shadow: 1px 3px 5px grey;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+
+.accordion-league-header {
+
+  min-width: 140px;
+    max-width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+  .fifi.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .fifi:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }

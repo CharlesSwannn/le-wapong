@@ -1,0 +1,85 @@
+.welcome-login {
+  color: $light;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.welcome-text {
+  font-weight: lighter;
+}
+
+.form-login {
+  box-shadow: 0 3px 10px rgb(255, 255, 255);
+  background-color: $light;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.form-league {
+  background-color: lightgrey;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 0 3px 10px white;
+  border: 2px solid white;
+}
+
+.form-control {
+  background-color: white;
+}
+
+#form-size{
+  height: 96vh;
+}
+
+.form_info {
+  width: 70vw;
+  margin-left: 50px;
+  padding-bottom: 20px;
+}
+
+.form-inputs {
+  margin-left: 40px;
+}
+
+.email {
+  border-radius: 10px;
+}
+
+.password {
+  border-radius: 10px;
+}
+
+.sign-up-input {
+  border-radius: 10px;
+}
+
+.first-name {
+  border-radius: 10px;
+}
+
+.btn-primary {
+  font-size: 20px;
+  border: 3px solid white;
+  border-radius: 25px;
+  box-shadow: 2px 2px 15px $light(0, 0, 0, 0.5 );
+  background: #FD1015;
+  background: linear-gradient(0deg, #FD1015 0%, rgba(251,75,2,1) 100%);
+  width: 140px;
+  height: 50px;
+  box-shadow: 1px 1px 10px grey;
+
+}
+
+.forgot-pw {
+  text-align: center;
+}
